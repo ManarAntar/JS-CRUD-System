@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUDS System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="w-75 mx-auto">
+        <h3 class="fw-bolder py-4">Product Managment System</h3>
+
+        <label for="productNameInput" class="m-2">ProductName :</label>
+        <input type="text"oninput="validateProductName()" name="" id="productNameInput" class="form-control">
+
+        <label for="productPriceInput" class="m-2">ProductPrice :</label>
+        <input type="number" name="" id="productPriceInput" class="form-control">
+
+        <label for="productCategoryInput" class="m-2">ProductCategory :</label>
+        <input type="text" name="" id="productCategoryInput" class="form-control">
+
+        <label for="productDescriptionInput" class="m-2">ProductDescription :</label>
+        <textarea type="text" name="" id="productDescriptionInput" class="form-control"></textarea>
+
+      
+      <button class="btn btn-outline-primary m-2"id="addBtn"> Add Product</button>
+
+    </div>
+    <div class="mx-auto w-50 p-4">
+        <input type="search" oninput="searchProducts(this.value)" placeholder="Search by Name" class="form-control" id="search">
+    </div>
+    <table class="w-75 mx-auto">
+        <thead>
+            <th class="px-2">index</th>
+            <th class="px-2">ProductName</th>
+            <th class="px-2">ProductPrice</th>
+            <th class="px-2">ProductCategory</th>
+            <th class="px-2">ProductDesc</th>
+            <th class="px-2">Update</th>
+            <th class="px-2">Delete</th>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <script src="js/Mainn.js"></script>
+
+</body>
+
+</html>

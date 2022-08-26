@@ -1,0 +1,24 @@
+.s{
+    background-color: yellow;
+  }
+  .valid{
+    position: relative;
+  }
+  .valid i{
+    position: absolute;
+    top:20px;
+    left: 90%;
+    color:red;
+  } 
+   .valid p{
+     width:100%;
+     border: 1px solid red;
+     border-radius: 10px;
+     padding: 10px;
+     margin-top:5px ;
+     color: red;
+   }
+   th{
+     
+   }
+   /* @media(max-width:767px) */
