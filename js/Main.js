@@ -60,15 +60,15 @@ function displayProducts(productList) {
     var container = "";
     for (i = 0; i < productList.length; i++) {
         container += `<tr>
-     <td>${i}</td>
-     <td>${productList[i].name}</td>
-     <td>${productList[i].price}</td>
-     <td>${productList[i].category}</td>
-     <td>${productList[i].desc}</td>
-     <td> 
+     <td class="p-2">${i}</td>
+     <td class="p-2">${productList[i].name}</td>
+     <td class="p-2">${productList[i].price}</td>
+     <td class="p-2">${productList[i].category}</td>
+     <td class="p-2">${productList[i].desc}</td>
+     <td class="p-2"> 
          <button class="btn btn-outline-warning"onclick="Update(${i})">Update</button>
      </td>
-     <td>
+     <td class="p-2">
          <button onclick="deleteProducts(${i})" class="btn btn-outline-danger">Delete</button>
      </td>
  </tr>`;
@@ -108,7 +108,7 @@ function Update(index) {
 //Step 10 Validation 
 function validateProductName() {
 
-    var regex = /^[A-Z][a-z]{3,8}.[A-Z][a-z]{3,8}?.[0-9]{1,3}?$/;
+    var regex = /^[A-Z][a-z]{3,8}.[A-Z][a-z]{3,8}?.[0-9]{1,3}?/;
     if (regex.test(productNameInput.value) == true) {
         productNameInput.classList.replace("is-invalid", "is-valid");
         return true;

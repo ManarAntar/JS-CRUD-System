@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="w-75 mx-auto">
+    <div class="container p-3">
         <h3 class="fw-bolder py-4">Product Managment System</h3>
 
         <label for="productNameInput" class="m-2">ProductName :</label>
@@ -28,26 +28,26 @@
         <textarea type="text" name="" id="productDescriptionInput" class="form-control"></textarea>
 
       
-      <button class="btn btn-outline-primary m-2"id="addBtn"> Add Product</button>
+      <button class="btn btn-outline-primary mt-4"id="addBtn"> Add Product</button>
 
     </div>
-    <div class="mx-auto w-50 p-4">
+    <div class="mx-auto w-75 p-4">
         <input type="search" oninput="searchProducts(this.value)" placeholder="Search by Name" class="form-control" id="search">
     </div>
     <table class="w-75 mx-auto">
         <thead>
-            <th class="px-2">index</th>
-            <th class="px-2">ProductName</th>
-            <th class="px-2">ProductPrice</th>
-            <th class="px-2">ProductCategory</th>
-            <th class="px-2">ProductDesc</th>
-            <th class="px-2">Update</th>
-            <th class="px-2">Delete</th>
+            <th class="p-2">index</th>
+            <th class="p-2">ProductName</th>
+            <th class="p-2">ProductPrice</th>
+            <th class="p-2">ProductCategory</th>
+            <th class="p-2">ProductDesc</th>
+            <th class="p-2">Update</th>
+            <th class="p-2">Delete</th>
         </thead>
         <tbody id="tableBody">
         </tbody>
     </table>
-    <script src="js/Mainn.js"></script>
+    <script src="js/Main.js"></script>
 
 </body>
 
